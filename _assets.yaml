@@ -1,0 +1,11 @@
+javascript_compressor: closure
+
+javascripts:
+  application:
+    - assets/js/app.js
+    - assets/js/foundation.js
+    - assets/js/jquery.js
+stylesheets:
+  screen:
+    - assets/css/app.css
+    - assets/css/foundation.css

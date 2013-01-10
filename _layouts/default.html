@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> ><! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <meta charset='utf-8' />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta content='width=device-width' name='viewport' />
+    <title></title>
+    {% include_css screen %}
+    {% include_js application %}
+    <!--[if lt IE 9]>
+      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Whole Body Div -->
+    <div class='row'>
+      <div class='twelve columns centered'>
+        {% include nav.html %}
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>
