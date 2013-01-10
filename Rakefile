@@ -8,7 +8,7 @@ task :parse_haml do
   system(%{
     cd _includes/haml && 
     for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
-  })
+  }) 
   puts "done."
 end
 

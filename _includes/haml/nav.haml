@@ -1,11 +1,18 @@
-/ Navigation
-%nav
-  %ul.nav-bar
+%nav.top-bar
+  %ul
     %li
-      %a{:href => "index.html"} Home
-    %li
-      %a{:href => "page1.html"} page1
-    %li
-      %a{:href => "page2.html"} page2
-    %li
-      %a{:href => "page3.html"} page3  
+      %a{ :href => "http://codetoki.com" }
+        Bootyard flavored Jekyll
+  / Building the Nav
+  %section
+    %ul.left
+      %li
+        %a{:href => "/page1.html"} Page 1
+      %li.has-dropdown
+        %a{:href => "#"} Dropdown
+        %ul.dropdown
+          %li
+            %a{:href => "/page2.html"} Page 2
+    %ul.right
+      %li.active
+        %a{:href => "/page3.html"} Page 3
