@@ -5,6 +5,10 @@ task :parse_haml do
     cd _layouts/haml && 
     for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
   })
+  system(%{
+    cd _includes/haml && 
+    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
+  })
   puts "done."
 end
 

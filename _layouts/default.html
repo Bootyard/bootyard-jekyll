@@ -3,13 +3,15 @@
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]> ><! <![endif]-->
-<html class='no-js' lang='en'>
+<html lang='en'>
   <!-- <![endif] -->
   <head>
     <meta charset='utf-8' />
+    <!-- Uncomment to make IE8 render like IE7 -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
     <!-- Set the viewport width to device width for mobile -->
-    <meta content='width=device-width' name='viewport' />
-    <title></title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>Apptitude</title>
     {% include_css screen %}
     {% include_js application %}
     <!--[if lt IE 9]>
@@ -17,12 +19,9 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Whole Body Div -->
     <div class='row'>
-      <div class='twelve columns centered'>
-        {% include nav.html %}
-        {{ content }}
-      </div>
+      {% include nav.html %}
+      {{ content }}
     </div>
   </body>
 </html>
