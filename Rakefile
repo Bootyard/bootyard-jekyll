@@ -5,13 +5,16 @@ task :parse_haml do
     cd _layouts/haml && 
     for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
   })
+  system(%{
+    cd _includes/haml && 
+    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
+  }) 
   puts "done."
 end
 
 desc "Launch preview environment"
 task :preview do
   Rake::Task["parse_haml"].invoke
-  system "jekyll --auto --server"
 end
 
 desc "Build site"

@@ -1,19 +1,19 @@
 module Jekyll
-  require 'haml'
-  class HamlConverter < Converter
+  require 'sass'
+  class SassConverter < Converter
     safe true
     priority :low
 
-    def matches(ext)
-      ext =~ /haml/i
+     def matches(ext)
+      ext =~ /sass/i
     end
 
     def output_ext(ext)
-      ".html"
+      ".css"
     end
 
     def convert(content)
-      engine = Haml::Engine.new(content)
+      engine = Sass::Engine.new(content)
       engine.render
     end
   end
