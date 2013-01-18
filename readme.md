@@ -6,7 +6,6 @@ How to install
     git clone https://github.com/Bootyard/bootyard-jekyll
 
 Compiling Haml to HTML
-
 ------
 In the terminal, type in this command:
 
