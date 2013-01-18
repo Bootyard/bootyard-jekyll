@@ -1,17 +1,30 @@
-<!-- Navigation -->
-<nav>
-  <ul class='nav-bar'>
+<nav class='top-bar'>
+  <ul>
     <li>
-      <a href='index.html'>Home</a>
-    </li>
-    <li>
-      <a href='page1.html'>page1</a>
-    </li>
-    <li>
-      <a href='page2.html'>page2</a>
-    </li>
-    <li>
-      <a href='page3.html'>page3</a>
+      <a href='https://github.com/Bootyard/bootyard-jekyll'>
+        Bootyard flavored Jekyll
+      </a>
     </li>
   </ul>
+  <!-- Building the Nav -->
+  <section>
+    <ul class='left'>
+      <li>
+        <a href='/page1.html'>Page 1</a>
+      </li>
+      <li class='has-dropdown'>
+        <a href='#'>Dropdown</a>
+        <ul class='dropdown'>
+          <li>
+            <a href='/page2.html'>Page 2</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class='right'>
+      <li class='active'>
+        <a href='/page3.html'>Page 3</a>
+      </li>
+    </ul>
+  </section>
 </nav>

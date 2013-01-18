@@ -23,7 +23,11 @@ GEM
     pygments.rb (0.3.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
+<<<<<<< HEAD
     sass (3.2.5)
+=======
+    sass (3.2.3)
+>>>>>>> 58250f32aa293fefda9e571119abf73e964b08a8
     syntax (1.0.0)
     yajl-ruby (1.1.0)
 
